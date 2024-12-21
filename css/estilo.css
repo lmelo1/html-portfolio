@@ -1,0 +1,1066 @@
+/*
+
+* 
+
+* @author Luiz Antonio Melo
+
+*/
+
+
+
+/* Layout
+
+-----------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+}
+.conteudo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.h1-whats { 
+  box-shadow: .6em 0 0 #05ffa3;
+  margin: 2rem 1rem;
+  width: 23ch;
+  overflow: hidden;
+  cursor:grab;
+  color: #5737c9;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate,
+             type 5s steps(23, end)
+}
+
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+}
+@keyframes caret { 
+  50% { 
+    box-shadow: .6em 0 0 transparent;
+  }
+}
+
+html, body, #home {
+
+	height: 100%;
+
+	/*overflow-x: hidden; */
+
+}
+
+
+
+div.body-content{
+
+  /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+
+  margin-bottom: 47px;
+
+}
+
+
+
+body {
+
+	font-family: Helvetica,Arial,sans-serif;
+
+  line-height: initial;
+
+}
+
+
+
+@font-face {
+
+  font-family: 'Pinot';
+
+  src: url(../fonts/Pinot.ttf) format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+
+
+/*header
+
+-----------------------------*/
+
+
+
+.containernav {
+
+  background: rgb(157, 152, 189);
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  position: fixed;
+
+}
+
+
+
+.nomeSam {
+
+  color:rgb(56, 16, 129);
+
+  text-shadow: 0.1em 0.1em 0.2em rgb(124, 123, 123);
+
+  padding-left:40%;
+
+}
+
+
+
+.nomeSam h2 {
+
+  font-family: 'Pinot', 'Times New Roman', Times, serif;
+
+}
+
+
+
+.nomeSam h3 {
+
+  font-family: 'Pinot', 'Times New Roman', Times, serif;
+
+}
+
+
+
+.img-logo{
+
+  width:80px;
+
+}
+
+
+
+.nomeSam h2{
+
+  font-size:2.6rem;
+
+}
+
+
+
+.nomeSam h4{
+
+  font-size: 2.3rem;
+
+}
+
+
+
+.imginicio{
+
+  /*padding-top: 92px;*/
+
+  opacity: 0.7;
+
+}
+
+
+
+.menufixo{
+
+ z-index: -1 !important;
+
+background-color:  rgb(174, 158, 204);
+
+}
+
+
+
+
+
+/*fim header
+
+-----------------------------*/
+
+.faixa {
+
+  background-color: rgba(157, 152, 189, 0.8);
+
+}
+
+
+
+#Posgraduacao{
+
+  display:none;
+
+}
+
+
+
+#mnuapresentacao{
+
+  display: none;
+
+}
+
+
+
+#mnuatendimento{
+
+  display:none;
+
+}
+
+
+
+#mnuartigos{
+
+  display:none;
+
+}
+
+
+
+#mnucontato{
+
+  display:none;
+
+}
+
+
+
+#mnucadastro{
+
+  display:none;
+
+}
+
+#mnupodcasts{
+
+  display:none;
+
+}
+
+#mnureportagens{
+
+  display:none;
+
+}
+
+
+
+.containertexto {
+
+  width: 70%;
+
+  padding-right: 10px;
+
+  padding-left: 10x;
+
+  margin-right: auto;
+
+  margin-left: auto;
+
+  align-items: center;
+
+}
+
+
+
+footer.fixar-rodape{
+
+  border-top: 1px solid #333;
+
+  text-align: right;
+
+  background-color: rgba(129, 118, 189);
+
+  bottom: 0px;
+
+  height: 40px;
+
+  position: fixed;
+
+  width: 100%;
+
+}
+
+
+
+.div-img {
+
+  max-height: 120px;
+
+  margin-left: 50%;
+
+  height:100%;
+
+  width: 100%;
+
+}
+
+
+
+.card-img-center{
+
+  width:230px;
+
+  align-self: center;
+
+  margin-bottom: 50px;
+
+}
+
+
+
+.p_apres {
+
+  font-size:2.7vw;
+
+}
+
+
+
+.btn-menu{
+
+  font-size:4vw;
+
+  background-color: rgba(157, 152, 189, 0.0);
+
+  border: none;
+
+  color:inherit;
+
+
+
+}.btn-podc{
+
+  font-size:4vw;
+
+  background-color: rgba(157, 152, 189, 0.0);
+
+  border: none;
+
+  color:inherit;
+
+  padding-right: 30px;
+
+}
+
+
+
+.btn-repo{
+
+  font-size:4vw;
+
+  background-color: rgba(157, 152, 189, 0.0);
+
+  border: none;
+
+  color:inherit;
+
+  padding-left: 30px;
+
+}
+
+
+
+/* tratamento pagina de atendimento */
+
+.pagAtend{
+
+  background-color: rgb(200, 186, 229);
+
+  max-width: 1200px;
+
+  justify-content: center;
+
+}
+
+
+
+.title-princ {
+
+  font-weight: 650;
+
+  padding-top: 1.2rem;
+
+  padding-bottom: 2rem;
+
+  line-height: 1.9rem;
+
+  margin-bottom: 0.5rem;
+
+  color: mediumslateblue;
+
+  text-align: center;
+
+  font-size: 2.5vh;
+
+  padding-top: 2vh;
+
+}
+
+
+
+.atflex {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  justify-content: center;
+
+  align-content: flex-start;
+
+}
+
+
+
+#cartao {
+
+  flex: 1 1 200px;
+
+  margin: 15px;
+
+  max-width: 250px;
+
+  width: 50px;
+
+}
+
+
+
+.atcard {
+
+  padding: 3px;
+
+  text-align: center;
+
+  background-color: rgb(238, 208, 208);
+
+}
+
+
+
+.atcard .icon {
+
+  width: 100px;
+
+  height: 100px;
+
+  margin: auto;
+
+}
+
+
+
+.atcard .icon-ou {
+
+  width: 80px;
+
+  height: 80px;
+
+  margin: auto;
+
+}
+
+
+
+.botao {
+
+  display: block;
+
+  padding: 0.5rem 1rem;
+
+  text-transform: uppercase;
+
+  border-radius: 30px;
+
+  border: 0;
+
+  cursor: pointer;
+
+  font-size: 80%;
+
+  font-weight: 500px;
+
+}
+
+
+
+.card__title {
+
+  text-align: center;
+
+  font-size: 1.8rem;
+
+  font-weight: bolder;
+
+}
+
+
+
+.card__title-ou {
+
+  padding-top: 1.2rem;
+
+  text-align: center;
+
+  font-size: 1.2rem;
+
+  font-weight: bolder;
+
+}
+
+
+
+.card__image {
+
+  border-radius: 10%;
+
+  background-color: rgb(238, 208, 208);
+
+  margin-top: 3px;
+
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+
+  width: 100%;
+
+}
+
+
+
+.card__image-ou {
+
+  border-radius: 10%;
+
+  background-color: rgb(238, 208, 208);
+
+  margin-top: 3px;
+
+  box-shadow: 0 10px 50px;
+
+  width: 100%;
+
+}
+
+
+
+.dados {
+
+  padding-bottom: 5px;
+
+}
+
+
+
+.font-ou {
+
+  font-size: 15px;
+
+}
+
+
+
+.atcard-header {
+
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 208, 208)), to(rgb(216, 134, 167)));
+
+  background: -moz-linear-gradient(top, rgb(238, 208, 208), rgb(216, 134, 167));
+
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='rgb(238, 208, 208)', EndColorStr='rgb(216, 134, 167)');
+
+}
+
+
+
+
+
+.btn-atend{
+
+  margin-bottom: 5px;
+
+  padding: 1px 15px 3px 2px;
+
+  border-radius: 5px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+}
+
+
+
+.atcard .btn{
+
+  display: block;
+
+}
+
+
+
+/*fim trat. pagina atendimentos */
+
+
+
+/* tratamento dos cards da página de artigos */
+
+
+
+
+
+.artcard{
+
+  margin: 10px;
+
+  max-width: 150px;
+
+  background-color: #f1cff1;
+
+}
+
+
+
+.artcard :first-child{
+
+  margin-left: 0px;
+
+}
+
+
+
+.artheader {
+
+  font-size:xx-small;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+
+
+.arttitulo {
+
+  font-size:small;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+
+
+.card-footer{
+
+  align-self:center;
+
+  width: 85%;
+
+  padding:5px;
+
+}
+
+
+
+.btn-artigo{
+
+  display:inline-block;
+
+  margin-bottom: 5px;
+
+  border-radius: 5px;
+
+  font-size: smaller;
+
+  width: 48%;
+
+  padding:1px;
+
+}
+
+
+
+.pagArtigos {
+
+  background-color: rgb(200, 186, 229);
+
+  max-width: 1200px;
+
+}
+
+
+
+.pagArtigos .row{
+
+  justify-content: space-around;
+
+  margin-bottom: 8px;
+
+  margin:0px;
+
+}
+
+
+
+/* Fim do tratamento dos cards da página de artigos */
+
+
+
+/*Tratamento da página de contato */
+
+
+
+.bodyContato {
+
+	font-family: Helvetica,Arial,sans-serif;
+
+  line-height: initial;
+
+	background: rgb(217, 213, 245);
+
+}
+
+
+
+.resultContato {
+
+	font-family: Helvetica,Arial,sans-serif;
+
+  line-height: initial;
+
+	background: rgb(217, 213, 245);
+
+  height:50%; 
+
+  width:50%;
+
+}
+
+
+
+.form-login{
+
+  background-color: rgb(200, 186, 229);
+
+  margin-bottom: 20px;
+
+}
+
+/*Fim do tratamento da página de contato */
+
+
+
+/* Tratamento do botão blip chat */
+
+ .message-bubble{
+
+   font-family:Nunito Sans,sans-serif;
+
+   display:flex;
+
+   flex-flow:row wrap;
+
+   position:fixed;
+
+   background:#fff;
+
+   color:#909ba9;
+
+   right:calc(100px + 2%);
+
+   max-width:240px;
+
+   bottom:60px;
+
+   padding:1em 1em 12px 12px;
+
+   border-radius:13px 13px 2px 13px;
+
+   box-shadow:1px -1px 9px rgba(0,0,0,.75);
+
+   z-index:980;
+
+   animation:toggle-bubble .5s ease-out;
+
+   margin-left:15px;
+
+   line-height:1.5em;
+
+   transform-origin:100% 100%
+
+  }
+
+   
+
+  .message-bubble::after{
+
+    bottom:0;
+
+    content:'';
+
+    position:absolute;
+
+    left:calc(100% - 15px);
+
+    width:0;
+
+    border:14px solid transparent;
+
+    border-bottom-color:#fff;
+
+    border-radius:4.5px
+
+  }
+
+  .message-bubble::before{
+
+    bottom:0;
+
+    content:'';
+
+    position:absolute;
+
+    left:calc(100% - 12px);
+
+    width:0;
+
+    border:15px solid transparent;
+
+    border-bottom-color:rgba(0,0,0,.25);
+
+    filter:blur(2px);
+
+    border-radius:4.5px
+
+  }
+
+  .message-bubble p{
+
+    margin:0
+
+  }
+
+  .message-bubble p+p{
+
+    margin-block:.4em 0
+
+  }
+
+  .message-bubble .close-button{
+
+    position:absolute;
+
+    right:5px;
+
+    top:5px;
+
+    width:.7em;
+
+    height:.7em;
+
+    opacity:.3
+
+  }
+
+  .message-bubble .close-button:hover{
+
+    opacity:1;
+
+    cursor:pointer
+
+  }
+
+  .message-bubble .close-button:before,.message-bubble .close-button:after{
+
+    position:absolute;
+
+    content:' ';
+
+    height:.7999999999999999em;
+
+    width:2px;
+
+    background-color:#333
+
+  }
+
+  .message-bubble .close-button:before{
+
+    transform:rotate(45deg)
+
+  }
+
+  .message-bubble .close-button:after{
+
+    transform:rotate(-45deg)
+
+  }
+
+  @-moz-keyframes toggle-bubble{
+
+    from{transform:scale(.1)}to{transform:scale(1)}
+
+  }
+
+  @-webkit-keyframes toggle-bubble{
+
+    from{transform:scale(.1)}to{transform:scale(1)}
+
+  }
+
+  @-o-keyframes toggle-bubble{
+
+    from{transform:scale(.1)}to{transform:scale(1)}
+
+  }
+
+  @keyframes toggle-bubble{
+
+    from{transform:scale(.1)}to{transform:scale(1)}
+
+  }
+
+/* Fim Tratamento do botão blip chat */
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+
+
+
+  .p_apres {
+
+    font-size: 2.8vw;
+
+  }  
+
+
+
+  .nomeSam {
+
+    color:rgb(56, 16, 129);
+
+    text-shadow: 0.1em 0.1em 0.2em rgb(124, 123, 123);
+
+    padding-left:10%;
+
+  }
+
+  
+
+  .nomeSam h4{
+
+    font-size: small;
+
+  }
+
+
+
+  .nomeSam h5{
+
+    font-size: smaller;
+
+  }
+
+
+
+  .card-img-center{
+
+    width:130px;
+
+    align-self: center;
+
+    margin-bottom: 0px;;
+
+  }
+
+
+
+  .div-img {
+
+    max-height: 80px;
+
+    margin-left: 80%;
+
+    height:100%;
+
+    width: 100%;
+
+  }
+
+
+
+  .card-img-top {
+
+    margin-top: 3px;
+
+    width: 20%;
+
+  }
+
+
+
+  .img-logo{
+
+    width: 50px;
+
+  }
+
+
+
+  .nomeSam {
+
+    color:rgb(56, 16, 129);
+
+    text-shadow: 0.1em 0.1em 0.2em rgb(124, 123, 123);
+
+    font-size:medium;
+
+  }
+
+
+
+  .artcard:first-child{
+
+    margin-left: 0px;
+
+    margin-right: 15%;
+
+  }
+
+  
+
+}
